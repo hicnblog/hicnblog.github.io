@@ -18,4 +18,5 @@ tags: [web]
   - Responsive.
   - Gambar dinamis.
   - Support Disqus Comment.
+  - Mendukung font lokal.
   - Dan masih banyak lagi :).
