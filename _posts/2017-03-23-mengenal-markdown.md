@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mengenal Markdown"
-description: "Markdown ialah sintaks ringan dan mudah digunakan untuk styling pada semua bentuk tulisan"
+description: "Markdown ialah sintaks ringan dan mudah digunakan untuk styling pada semua bentuk tulisan."
 tags: [web]
 ---
 
