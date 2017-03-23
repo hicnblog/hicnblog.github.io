@@ -5,14 +5,14 @@
 # Exit if any subcommand fails.
 set -e
 
-echo "Started deploying"
+echo "Started deploying to master"
 
-# Checkout gh-pages branch.
-if [ `git branch | grep gh-pages` ]
+# Checkout master branch.
+if [ `git branch | grep master` ]
 then
-  git branch -D gh-pages
+  git branch -D master
 fi
-git checkout -b gh-pages
+git checkout -b master
 
 # Build site.
 bower install
@@ -23,15 +23,15 @@ find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm 
 mv _site/* .
 rm -R _site/
 
-# Push to gh-pages.
+# Push to master.
 git add -fA
 git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
-git push -f -q origin gh-pages
+git push -f -q origin master
 
 # Move back to previous branch.
 git checkout -
 bower install
 
-echo "Deployed Successfully!"
+echo "Deployed to master Successfully!"
 
 exit 0
