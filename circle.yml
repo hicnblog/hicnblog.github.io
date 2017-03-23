@@ -5,6 +5,7 @@ machine:
 dependencies:
   pre:
     - ./bin/setup
+    - ./bin/deploy
 
 test:
   post:
