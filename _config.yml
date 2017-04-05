@@ -3,6 +3,7 @@
 name: H.I.C.N
 paginate: 15
 url: www.bloghicn.ga
+markdown: kramdown
 blog_theme: light # Or use dark
 
 # Optional settings

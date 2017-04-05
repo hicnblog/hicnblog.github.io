@@ -4,3 +4,5 @@
 //= require scrollreveal
 //= require turbolinks5/dist/turbolinks.js
 //= require vendor/retina.js
+//= require materialize
+//= require clipboard
