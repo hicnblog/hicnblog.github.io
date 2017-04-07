@@ -6,7 +6,7 @@ tags: [web]
 ---
 
 <article id="story_editor">
-<p id="table_markdown_show" style="display:none;"></p>
+<p id="diary_on_show" style="display:none;"></p>
 <div id="form-container" class="row" style="display:none;">
   <form class="col s12" id="diary_ku">
     <div class="row">
@@ -23,7 +23,6 @@ tags: [web]
   </form>
 </div>
 
-<!--Display Diary-->
 <div class="row" id="display_diary">
 <div class="col s12">
 <div class="content_diary" id="display_content_diary">
