@@ -1,5 +1,9 @@
-{% unless site.local_fonts %}
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+{% if site.firebase.firebase_asset %}
+  <script src="//www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+{% endif %}
+
+{% if site.local_fonts %}
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
   <script>
     WebFont.load({
       google: {
@@ -7,8 +11,11 @@
       }
     });
   </script>
-{% endunless %}
+{% endif %}
 
 {% javascript vendor %}
 {% javascript application %}
+
+<script src="//cdn.quilljs.com/1.2.3/quill.js"></script>
+
 {% javascript hicn_script %}

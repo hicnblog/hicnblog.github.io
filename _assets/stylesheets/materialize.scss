@@ -23,3 +23,38 @@
 
 // Materialize
 @import "../bower/materialize/sass/materialize.scss";
+
+button#on_button_submit {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: none;
+    background-color: rgb(98, 99, 103);
+    color: #bdbdbd;
+    border: 1px solid white;
+    letter-spacing: 0;
+    line-height: inherit;
+}
+
+div.ql-container.ql-bubble {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+}
+
+form#diary_ku {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+form#diary_ku .input-field.col.s12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+form#diary_ku .ql-editor {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+span#on_title_story {
+    font-size: 19px;
+}

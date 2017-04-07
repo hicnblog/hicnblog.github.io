@@ -34,11 +34,13 @@
     {% stylesheet dark %}
   {% endif %}
 
+<link href="//cdn.quilljs.com/1.2.3/quill.bubble.css" rel="stylesheet">
+
   {% if site.ga_analytics %}
   <script>
     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
     ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="//www.google-analytics.com/analytics.js" async defer></script>
 {% endif %}
 </head>

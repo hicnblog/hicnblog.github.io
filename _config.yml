@@ -12,7 +12,7 @@ about_enabled: false # Change to true if you wish to show an icon in the navigat
 discus_identifier: bloghicn
 ga_analytics: UA-84821720-4
 google_site_verification: kS2M5Iee7pnljyuRn_BLDiVSwguipxVCBAbzVcnJv2g
-local_fonts: false # Change to true if you wish to use local fonts
+local_fonts: true # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
 social:
   dribbble: # Add your Dribbble handle
@@ -67,3 +67,5 @@ permalink: posts/:slug
 footer_link:
   my_self_link: http://habibimroncn.github.io
   other_link: http://habibimroncn.github.io
+firebase:
+  firebase_asset: true
