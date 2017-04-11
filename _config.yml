@@ -1,6 +1,6 @@
 # Mandatory settings
 
-name: H.I.C.N
+name: BLOGHICN
 paginate: 15
 url: https://www.bloghicn.ga
 enforce_ssl: www.bloghicn.ga
