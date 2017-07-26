@@ -1,20 +1,74 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>BLOGHICN</title>
+    <description></description>
+    <link>https://www.bloghicn.ga</link>
+    <atom:link href="https://www.bloghicn.ga/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Minipedia Reborn</title>
+        <description>Minipedia Reborn ialah website yang digunakan untuk mencari ringkasan konten di wikipedia.</description>
+        <pubDate>Mon, 24 Jul 2017 00:00:00 +0700</pubDate>
+        <link>https://www.bloghicn.ga/posts/minipedia-reborn</link>
+        <guid isPermaLink="true">https://www.bloghicn.ga/posts/minipedia-reborn</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Permainan kecepatan ketik (tesketik)</title>
+        <description>tesketik ialah website yang digunakan untuk mengetes kecepatan ketik anda dalam waktu 1 menit.</description>
+        <pubDate>Sun, 23 Jul 2017 00:00:00 +0700</pubDate>
+        <link>https://www.bloghicn.ga/posts/permainan-kecepatan-ketik</link>
+        <guid isPermaLink="true">https://www.bloghicn.ga/posts/permainan-kecepatan-ketik</guid>
+      </item>
+    
+      <item>
+        <title>Ini Ceritaku</title>
+        <description>sebuah website yang digunakan untuk share cerita kamu :smile:</description>
+        <pubDate>Thu, 06 Apr 2017 00:00:00 +0700</pubDate>
+        <link>https://www.bloghicn.ga/posts/research-ideku</link>
+        <guid isPermaLink="true">https://www.bloghicn.ga/posts/research-ideku</guid>
+      </item>
+    
+      <item>
+        <title>Cheat sheets markdown emoji</title>
+        <description>Kumpulan markdown emoji yang mudah untuk digunakan, tinggal copy paste :blush:</description>
+        <pubDate>Wed, 05 Apr 2017 00:00:00 +0700</pubDate>
+        <link>https://www.bloghicn.ga/posts/cheat-sheets-markdown-emoji</link>
+        <guid isPermaLink="true">https://www.bloghicn.ga/posts/cheat-sheets-markdown-emoji</guid>
+      </item>
+    
+      <item>
+        <title>wp_list_pluck() ialah sebuah fitur wordpress yang menakjubkan</title>
+        <description>wp_list_pluck(), fitur wordpress yang membuat kode semakin simple.</description>
+        <pubDate>Tue, 04 Apr 2017 00:00:00 +0700</pubDate>
+        <link>https://www.bloghicn.ga/posts/wp-list-pluck-ialah-sebuah-fitur-wordpress-yang-menakjubkan</link>
+        <guid isPermaLink="true">https://www.bloghicn.ga/posts/wp-list-pluck-ialah-sebuah-fitur-wordpress-yang-menakjubkan</guid>
+      </item>
+    
+      <item>
+        <title>Tutorial membuat login form pada private page atau post wordpress</title>
+        <description>Secara default page atau post private tidak akan ditampilkan jika pengguna tidak login.</description>
+        <pubDate>Mon, 03 Apr 2017 00:00:00 +0700</pubDate>
+        <link>https://www.bloghicn.ga/posts/tutorial-membuat-login-form-pada-private-post-page</link>
+        <guid isPermaLink="true">https://www.bloghicn.ga/posts/tutorial-membuat-login-form-pada-private-post-page</guid>
+      </item>
+    
+      <item>
+        <title>Mengenal Markdown</title>
+        <description>Markdown ialah sintaks ringan dan mudah digunakan untuk styling pada semua bentuk tulisan.</description>
+        <pubDate>Thu, 23 Mar 2017 00:00:00 +0700</pubDate>
+        <link>https://www.bloghicn.ga/posts/mengenal-markdown</link>
+        <guid isPermaLink="true">https://www.bloghicn.ga/posts/mengenal-markdown</guid>
+      </item>
+    
+      <item>
+        <title>Peluncuran blog baru bro</title>
+        <description>bloghicn ialah blog yang dibuat dengan sangat simple alias tanpa biaya sepeserpun. Hehehe.</description>
+        <pubDate>Mon, 20 Mar 2017 00:00:00 +0700</pubDate>
+        <link>https://www.bloghicn.ga/posts/peluncuran-blog-baru</link>
+        <guid isPermaLink="true">https://www.bloghicn.ga/posts/peluncuran-blog-baru</guid>
+      </item>
+    
   </channel>
 </rss>
