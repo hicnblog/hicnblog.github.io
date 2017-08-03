@@ -19,5 +19,4 @@ $(document).on('turbolinks:load', function () {
     viewFactor: 0
   });
 });
-
 window.sr = ScrollReveal({ reset: true });
