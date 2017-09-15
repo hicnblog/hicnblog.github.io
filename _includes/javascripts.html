@@ -2,17 +2,10 @@
   <script src="//www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
 {% endif %}
 
-{% if site.local_fonts %}
-  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ['Cormorant Garamond:700', 'Lato:300,400,700']
-      }
-    });
-  </script>
-{% endif %}
+{% unless site.local_fonts %}
+{% include javascript.html path="webfonts" %}
+{% endunless %}
 
-{% javascript vendor %}
-<script src="//cdn.quilljs.com/1.2.3/quill.js"></script>
-{% javascript hicn_script %}
+{% include javascript.html path="vendor" %}
+
+{% include javascript.html path="hicn_script" %}

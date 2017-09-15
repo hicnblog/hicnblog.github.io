@@ -1,7 +1,7 @@
 //= require jquery
-//= require vendor/jquery-throttle-debounce.js
+//= require throttle-debounce-fn/dist/throttle-debounce-fn.js
 //= require fluidbox
 //= require scrollreveal
-//= require vendor/retina.js
-//= require materialize
-//= require clipboard
+//= require retinajs/dist/retina.js
+//= require materialize-css/dist/js/materialize.min.js
+//= require clipboard/dist/clipboard.min.js

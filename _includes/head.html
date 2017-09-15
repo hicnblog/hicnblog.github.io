@@ -1,3 +1,12 @@
+{% if page.thumb_image %}
+{% if page.thumb_image contains '://' %}
+  {% assign thumb_image = page.thumb_image %}
+{% else %}
+  {% assign thumb_image = page.thumb_image | asset_path | absolute_url %}
+{% endif %}
+{% else %}
+{% assign thumb_image = 'og-image.png' | asset_path | absolute_url %}
+{% endif %}
 <head>
   <script type="text/javascript">
     var host = "www.bloghicn.ga";
@@ -11,36 +20,34 @@
   <meta name="description" content="{{ page.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:title" content="{{ page.title | escape }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.png %}{% endif %}">
+  <meta property="og:image" content="{{ thumb_image }}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
-  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.png %}{% endif %}">
+  <meta name="twitter:image" content="{{ thumb_image }}">
   
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.jpg %}">
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
   {% if site.local_fonts %}
-    {% stylesheet fonts %}
+    {% include stylesheet.html path="fonts" %}
   {% endif %}
 
-  {% stylesheet materialize %}
+  {% include stylesheet.html path="materialize" %}
 
   {% if site.blog_theme == "light" %}
-    {% stylesheet light %}
+    {% include stylesheet.html path="light" %}
   {% else %}
-    {% stylesheet dark %}
+    {% include stylesheet.html path="dark" %}
   {% endif %}
-
-<link href="//cdn.quilljs.com/1.2.3/quill.bubble.css" rel="stylesheet">
 
   {% if site.ga_analytics %}
   <script>

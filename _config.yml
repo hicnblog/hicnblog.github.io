@@ -31,12 +31,11 @@ assets:
   features:
     automatic_img_size: true
   sources:
-    - _assets/bower
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _vendor/
+    - _assets/yarn
 collections:
   my_tags:
     output: true
@@ -49,15 +48,15 @@ defaults:
     values:
       layout: articles_by_tag
 exclude:
-  - .bowerrc
   - .travis.yml
   - bin/*
-  - bower.json
   - circle.yml
   - Gemfile
   - Gemfile.lock
+  - package.json
   - README.md
   - vendor/
+  - yarn.lock
 plugins:
   - jekyll-assets
   - jekyll-paginate
