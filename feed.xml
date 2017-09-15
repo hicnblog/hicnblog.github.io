@@ -1,18 +1,20 @@
+---
+---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>H.I.C.N</title>
-    <description></description>
-    <link>www.bloghicn.ga</link>
-    <atom:link href="www.bloghicn.ga/feed.xml" rel="self" type="application/rss+xml" />
-    
+    <title>{{ site.name | xml_escape }}</title>
+    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
+    {% for post in site.posts limit:10 %}
       <item>
-        <title>Peluncuran blog baru bro</title>
-        <description>H.I.C.N ialah blog yang dibuat dengan sangat simple alias tanpa biaya sepeserpun. Hehehe.</description>
-        <pubDate>Mon, 20 Mar 2017 00:00:00 +0700</pubDate>
-        <link>www.bloghicn.ga/posts/peluncuran-blog-baru</link>
-        <guid isPermaLink="true">www.bloghicn.ga/posts/peluncuran-blog-baru</guid>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.description | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | absolute_url }}</link>
+        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
       </item>
-    
+    {% endfor %}
   </channel>
 </rss>
