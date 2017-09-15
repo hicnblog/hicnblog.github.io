@@ -6,24 +6,29 @@
   <title>BLOGHICN | Page not found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
-    <link type="text/css" rel="stylesheet" href="/assets/fonts.css">
-  
-  
-  
-    <link type="text/css" rel="stylesheet" href="/assets/notfound-light.css">
-  
+  {% if site.local_fonts %}
+    {% include stylesheet.html path="fonts" %}
+  {% endif %}
+
+  {% if site.blog_theme == "light" %}
+    {% stylesheet notfound-light %}
+    {% include stylesheet.html path="notfound-light" %}
+  {% else %}
+    {% include stylesheet.html path="notfound-dark" %}
+  {% endif %}
 </head>
 <body>
-  <main role="main" class="notfound-wrapper">
+  <main class="notfound-wrapper">
     <div class="notfound-content">
       <h1><a href="/" title="Back to homepage">BLOGHICN</a></h1>
       <p>
-        Sepertinya Anda tersesat. Ayo kita kembali ke <a href="/">rumah</a>!
+        Sepertinya Anda tersesat guys :). Ayo kita kembali ke <a href="{{ '/' | relative_url }}">rumah</a>!
       </p>
     </div>
   </main>
-
   
+  {% unless site.local_fonts %}
+    {% include javascript.html path="webfonts" %}
+  {% endunless %}
 </body>
 </html>

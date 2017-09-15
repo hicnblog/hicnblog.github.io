@@ -113,8 +113,13 @@
     <li class="article-list-item reveal">
       <a href="/posts/minipedia-reborn" title="Minipedia Reborn">
         <h5>
+<<<<<<< HEAD
           Minipedia Reborn
           <span class="icon icon-ios-arrow-thin-right"></span>
+=======
+          {{ post.title }}
+          <span class="icon icon-arrow-right"></span>
+>>>>>>> f6f2ad6074443aa1c940683ffdf121fc6b1e1d17
         </h5>
       </a>
       <p>Minipedia Reborn ialah website yang digunakan untuk mencari ringkasan konten di wikipedia.</p>
@@ -141,6 +146,7 @@
         </div>
       </div>
     </li>
+<<<<<<< HEAD
   
     <li class="article-list-item reveal">
       <a href="/posts/permainan-kecepatan-ketik" title="Permainan kecepatan ketik (tesketik)">
@@ -172,6 +178,17 @@
           
         </div>
       </div>
+=======
+  {% endfor %}
+  {% if paginator.total_pages > 1 %}
+    <li class="article-pagination reveal">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <span class="icon icon-arrow-right"></span></a>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}"><span class="icon icon-arrow-left"></span> Older posts</a>
+      {% endif %}
+>>>>>>> f6f2ad6074443aa1c940683ffdf121fc6b1e1d17
     </li>
   
     <li class="article-list-item reveal">
