@@ -1,5 +1,6 @@
 {
     "name": "hicn",
+    "version": "1.0",
     "dependencies": {
       "scrollreveal": "~3.3.2",
       "clipboard": "^1.6.1",
