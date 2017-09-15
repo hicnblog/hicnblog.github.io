@@ -133,6 +133,7 @@ exit 0
 
 ```
 ## Make push/pull from another account
-```$ git pull git@github-company:company/repo.git
+```
+$ git pull git@github-company:company/repo.git
 $ git push origin master
 ```
