@@ -1,0 +1,11 @@
+{% if site.firebase.firebase_asset %}
+  <script src="//www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+{% endif %}
+
+{% unless site.local_fonts %}
+{% include javascript.html path="webfonts" %}
+{% endunless %}
+
+{% include javascript.html path="vendor" %}
+
+{% include javascript.html path="hicn_script" %}
