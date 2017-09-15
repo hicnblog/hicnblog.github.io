@@ -12,7 +12,7 @@ layout: default
         <p>{{ post.description }}</p>
         <div class="article-list-footer">
           <span class="article-list-date">
-            assign m = page.date | date: "%-m" %}
+            {% assign m = page.date | date: "%-m" %}
             {{ page.date | date: "%-d" }}
             {% case m %}
               {% when '1' %}Januari
