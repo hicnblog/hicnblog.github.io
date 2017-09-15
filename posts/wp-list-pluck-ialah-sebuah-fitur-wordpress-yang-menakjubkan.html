@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+    var host = "www.bloghicn.ga";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+ </script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>BLOGHICN | wp_list_pluck() ialah sebuah fitur wordpress yang menakjubkan</title>
+  <meta name="google-site-verification" content="kS2M5Iee7pnljyuRn_BLDiVSwguipxVCBAbzVcnJv2g">
+  <meta name="description" content="wp_list_pluck(), fitur wordpress yang membuat kode semakin simple.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="wp_list_pluck() ialah sebuah fitur wordpress yang menakjubkan">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.bloghicn.ga/posts/wp-list-pluck-ialah-sebuah-fitur-wordpress-yang-menakjubkan">
+  <meta property="og:description" content="wp_list_pluck(), fitur wordpress yang membuat kode semakin simple.">
+  <meta property="og:site_name" content="BLOGHICN">
+  <meta property="og:image" content="https://www.bloghicn.ga/assets/og-image.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://www.bloghicn.ga/posts/wp-list-pluck-ialah-sebuah-fitur-wordpress-yang-menakjubkan">
+  <meta name="twitter:title" content="wp_list_pluck() ialah sebuah fitur wordpress yang menakjubkan">
+  <meta name="twitter:description" content="wp_list_pluck(), fitur wordpress yang membuat kode semakin simple.">
+  <meta name="twitter:image" content="https://www.bloghicn.ga/assets/og-image.png">
+  
+  <link rel="canonical" href="https://www.bloghicn.ga/posts/wp-list-pluck-ialah-sebuah-fitur-wordpress-yang-menakjubkan">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.jpg">
+  <link href="https://www.bloghicn.ga/feed.xml" type="application/rss+xml" rel="alternate" title="BLOGHICN Last 10 blog posts">
+
+  
+    <link type="text/css" rel="stylesheet" href="/assets/fonts.css">
+  
+
+  <link type="text/css" rel="stylesheet" href="/assets/materialize.css">
+
+  
+    <link type="text/css" rel="stylesheet" href="/assets/light.css">
+  
+
+<link href="//cdn.quilljs.com/1.2.3/quill.bubble.css" rel="stylesheet">
+
+  
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-84821720-4','auto');ga('send','pageview')
+  </script>
+  <script src="//www.google-analytics.com/analytics.js" async defer></script>
+
+</head>
+
+<body>
+  <main role="main">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav reveal">
+  <a href="/" class="header-logo" title="BLOGHICN">BLOGHICN</a>
+  <ul class="header-links">
+    
+    
+      <li>
+        <a href="//twitter.com/Hab_15" target="_blank" title="Twitter">
+          <span class="icon icon-social-twitter"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="//www.facebook.com/habibimroncn" target="_blank" title="Facebook">
+          <span class="icon icon-social-facebook"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="//github.com/habibimroncn" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="//www.linkedin.com/in/habib-nugroho-689410ab" target="_blank" title="LinkedIn">
+          <span class="icon icon-social-linkedin"></span>
+        </a>
+      </li>
+    
+    
+    
+      <li>
+        <a href="mailto:habibimron1508@gmail.com" title="Email">
+          <span class="icon icon-at"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed.xml" target="_blank" title="RSS">
+          <span class="icon icon-social-rss"></span>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <article class="article reveal">
+          <header class="article-header">
+            <h1>wp_list_pluck() ialah sebuah fitur wordpress yang menakjubkan</h1>
+            <p>wp_list_pluck(), fitur wordpress yang membuat kode semakin simple.</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                
+                4
+                April
+                  
+                2017
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  1 menit untuk membaca
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/tag/web">web</a>
+                
+                  <a href="/tag/wordpress">wordpress</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <p><strong>wp_list_pluck()</strong> ialah fitur wordpress yang digunakan untuk mengambil <em>field</em> atau bagian tertentu dari <em>Object</em> yang kemudian dirubah menjadi bentuk list/daftar.
+Kalau belum paham juga saya akan menjalaskan dengan menggunakan kode.</p>
+
+<p>Misalnya teman-teman mempunyai <em>array</em> <em>object</em> dengan nama <code class="highlighter-rouge">$jadwal_kuliah</code> yang berisi data sebagai berikut :</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">[0] =&gt; stdClass Object
+	[ID] =&gt; 123
+	[post_content] =&gt; Review aritmatika logic
+	[post_title] =&gt; Aritmatika
+
+[1] =&gt; stdClass Object
+	[ID] =&gt; 456
+	[post_content] =&gt; Object Oriented Programming on php
+	[post_title] =&gt; OOP PHP
+
+[2] =&gt; stdClass Object
+	[ID] =&gt; 789
+	[post_content] =&gt; Membuat template wordpress
+	[post_title] =&gt; Wordpress
+	)</code></pre></figure>
+
+<p>Secara umum jika kita ingin mengambil isi dari <code class="highlighter-rouge">post_content</code> maka kode yang digunakan seperti berikut :</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="nv">$post_contents</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+<span class="k">foreach</span> <span class="p">(</span> <span class="nv">$jadwal_kuliah</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$content</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$post_contents</span><span class="p">[</span><span class="nv">$key</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$content</span><span class="o">-&gt;</span><span class="na">post_content</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Kode diatas memang sedikit terlalu panjang <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20" align="absmiddle"> , tapi jika kita menggunakan <code class="highlighter-rouge">wp_list_pluck()</code> akan seperti ini :</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="nv">$post_contents</span> <span class="o">=</span> <span class="nx">wp_list_pluck</span><span class="p">(</span><span class="nv">$jadwal_kuliah</span><span class="p">,</span> <span class="s1">'post_content'</span><span class="p">);</span>
+<span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Jadi dengan <code class="highlighter-rouge">wp_list_pluck()</code> maka kode yang dibuat akan semakin simple dan praktis <img class="emoji" title=":wink:" alt=":wink:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20" align="absmiddle">.</p>
+
+          </div>
+
+          <div class="article-share">
+            
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status=wp_list_pluck() ialah sebuah fitur wordpress ya... - https://www.bloghicn.ga/posts/wp-list-pluck-ialah-sebuah-fitur-wordpress-yang-menakjubkan by @Hab_15', 'newwindow', 'width=500, height=225'); return false;" data-turbolinks="false">
+              <svg enable-background="new 0 0 128 128" width="15px" version="1.1" viewbox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x37__stroke"><g id="Twitter"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"></rect><path clip-rule="evenodd" d="M128,23.294    c-4.703,2.142-9.767,3.59-15.079,4.237c5.424-3.328,9.587-8.606,11.548-14.892c-5.079,3.082-10.691,5.324-16.687,6.526    c-4.778-5.231-11.608-8.498-19.166-8.498c-14.493,0-26.251,12.057-26.251,26.927c0,2.111,0.225,4.16,0.676,6.133    C41.217,42.601,21.871,31.892,8.91,15.582c-2.261,3.991-3.554,8.621-3.554,13.552c0,9.338,4.636,17.581,11.683,22.412    c-4.297-0.131-8.355-1.356-11.901-3.359v0.331c0,13.051,9.053,23.937,21.074,26.403c-2.201,0.632-4.523,0.948-6.92,0.948    c-1.69,0-3.343-0.162-4.944-0.478c3.343,10.694,13.035,18.483,24.53,18.691c-8.986,7.227-20.315,11.533-32.614,11.533    c-2.119,0-4.215-0.123-6.266-0.37c11.623,7.627,25.432,12.088,40.255,12.088c48.309,0,74.717-41.026,74.717-76.612    c0-1.171-0.023-2.342-0.068-3.49C120.036,33.433,124.491,28.695,128,23.294" fill-rule="evenodd" id="Twitter_1_"></path></g></g></svg>
+            </a>
+            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://www.bloghicn.ga/posts/wp-list-pluck-ialah-sebuah-fitur-wordpress-yang-menakjubkan', 'newwindow', 'width=500, height=500'); return false;" data-turbolinks="false">
+              <svg enable-background="new 0 0 128 128" width="15px" version="1.1" viewbox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31__stroke"><g id="Facebook_1_"><rect fill="none" height="128" width="128"></rect><path clip-rule="evenodd" d="M68.369,128H7.065C3.162,128,0,124.836,0,120.935    V7.065C0,3.162,3.162,0,7.065,0h113.871C124.837,0,128,3.162,128,7.065v113.87c0,3.902-3.163,7.065-7.064,7.065H88.318V78.431    h16.638l2.491-19.318H88.318V46.78c0-5.593,1.553-9.404,9.573-9.404l10.229-0.004V20.094c-1.769-0.235-7.841-0.761-14.906-0.761    c-14.749,0-24.846,9.003-24.846,25.535v14.246H51.688v19.318h16.681V128z" fill-rule="evenodd" id="Facebook"></path></g></g></svg>
+            </a>
+            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=https://www.bloghicn.ga/posts/wp-list-pluck-ialah-sebuah-fitur-wordpress-yang-menakjubkan', 'newwindow', 'width=550, height=400'); return false;" data-turbolinks="false">
+              <svg enable-background="new 0 0 128 128" version="1.1" viewbox="0 0 128 128" width="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x35__stroke"><g id="Google_Plus"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"></rect><path clip-rule="evenodd" d="M40.654,55.935v16.13    c0,0,15.619-0.021,21.979-0.021C59.189,82.5,53.834,88.194,40.654,88.194c-13.338,0-23.748-10.832-23.748-24.194    s10.41-24.194,23.748-24.194c7.052,0,11.607,2.483,15.784,5.944c3.344-3.35,3.065-3.828,11.573-11.877    c-7.222-6.586-16.822-10.6-27.357-10.6C18.201,23.273,0,41.507,0,64c0,22.493,18.201,40.727,40.654,40.727    c33.561,0,41.763-29.275,39.044-48.792H40.654z M113.912,56.742V42.628h-10.063v14.113H89.358v10.081h14.491v14.517h10.063V66.823    H128V56.742H113.912z" fill-rule="evenodd" id="Google_Plus_1_"></path></g></g></svg>
+            </a>
+          </div>
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script>
+              (function() {
+                  var d = document, s = d.createElement('script');
+                  s.src = '//bloghicn.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+          
+        </article>
+        <footer class="footer reveal">
+  <p>
+    BLOGHICN built by
+    <a href="http://habibimroncn.github.io" title="habibimroncn">habibimroncn</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script src="//www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+      }
+    });
+  </script>
+
+
+<script type="text/javascript" src="/assets/vendor.js"></script>
+<script src="//cdn.quilljs.com/1.2.3/quill.js"></script>
+<script type="text/javascript" src="/assets/hicn_script.js"></script>
+</body>
+</html>

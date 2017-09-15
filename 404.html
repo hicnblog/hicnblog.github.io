@@ -1,16 +1,12 @@
----
-permalink: /404.html
-sitemap: false
----
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.name }} | Page not found</title>
+  <title>BLOGHICN | Page not found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
   {% if site.local_fonts %}
     {% include stylesheet.html path="fonts" %}
   {% endif %}
@@ -21,12 +17,22 @@ sitemap: false
   {% else %}
     {% include stylesheet.html path="notfound-dark" %}
   {% endif %}
+=======
+  
+    <link type="text/css" rel="stylesheet" href="/assets/fonts.css">
+  
+  
+  
+    <link type="text/css" rel="stylesheet" href="/assets/notfound-light.css">
+  
+>>>>>>> 74ed8eaba89aa90728e82d8d0683311d46117bc9
 </head>
 <body>
   <main class="notfound-wrapper">
     <div class="notfound-content">
-      <h1><a href="{{ '/' | relative_url }}" title="Back to homepage">{{ site.name }}</a></h1>
+      <h1><a href="/" title="Back to homepage">BLOGHICN</a></h1>
       <p>
+<<<<<<< HEAD
         Sepertinya Anda tersesat guys :). Ayo kita kembali ke <a href="{{ '/' | relative_url }}">rumah</a>!
       </p>
     </div>
@@ -35,5 +41,13 @@ sitemap: false
   {% unless site.local_fonts %}
     {% include javascript.html path="webfonts" %}
   {% endunless %}
+=======
+        Sepertinya Anda tersesat. Ayo kita kembali ke <a href="/">rumah</a>!
+      </p>
+    </div>
+  </main>
+
+  
+>>>>>>> 74ed8eaba89aa90728e82d8d0683311d46117bc9
 </body>
 </html>
