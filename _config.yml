@@ -1,0 +1,34 @@
+title: BLOGHICN
+description: > # this means to ignore newlines until "baseurl:"
+  Blog yang berisikan catatan dari seorang kuli. 
+permalink: ':title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.bloghicn.ga" # the base hostname & protocol for your site, e.g. http://example.com
+enforce_ssl: www.bloghicn.ga
+
+# Author Settings
+author: Habib Imron Cahyo Nugroho # add your name
+author-img: habib-imron-cahyo-nugroho.jpg # add your photo
+about-author: Hanya seorang kuli. # add description
+twitter: Hab_15
+facebook: habibimroncn
+github: habibimroncn
+linkedin: habib-nugroho
+email: habibimron1508@gmail.com
+
+# Disqus
+discus-identifier: bloghicn # add your discus identifier
+
+# Tracker
+analytics: UA-84821720-4 # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jemoji
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
+# Visual-CV Settings
+visual-cv-url: https://www.visualcv.com/habibimroncn

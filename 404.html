@@ -1,32 +1,38 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>BLOGHICN | Page not found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-    <link rel="stylesheet" href="/assets/fonts.css">
-
-  
-
-  
-    <link type="text/css" rel="stylesheet" href="/assets/notfound-light.css">
-    <link rel="stylesheet" href="/assets/notfound-light.css">
-
-  
-</head>
-<body>
-  <main class="notfound-wrapper">
-    <div class="notfound-content">
-      <h1><a href="/" title="Back to homepage">BLOGHICN</a></h1>
-      <p>
-        Sepertinya Anda tersesat guys :). Ayo kita kembali ke <a href="/">rumah</a>!
-      </p>
-    </div>
-  </main>
-  
-  
-</body>
-</html>
+---
+layout: main
+permalink: /404.html
+sitemap: false
+---
+<div class="page-not-found">
+    <h3>Halaman tidak ditemukan</h3>
+</div>
+{% for post in site.posts %}
+<article class="post">
+  {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% else %}
+  {% endif %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
+    <span class="post-date">{% assign m = post.date | date: "%-m" %}
+      {{ post.date | date: "%-d" }}
+      {% case m %}
+        {% when '1' %}Januari
+        {% when '2' %}Februari
+        {% when '3' %}Maret
+        {% when '4' %}April
+        {% when '5' %}Mei
+        {% when '6' %}Juni
+        {% when '7' %}Juli
+        {% when '8' %}Agustus
+        {% when '9' %}September
+        {% when '10' %}Oktober
+        {% when '11' %}November
+        {% when '12' %}Desember
+      {% endcase %}
+      {{ post.date | date: "%Y" }}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " menit untuk membaca" }}{% endunless %}</span>
+  </div>
+</article>
+{% endfor %}
