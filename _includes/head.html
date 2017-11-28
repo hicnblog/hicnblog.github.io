@@ -1,4 +1,10 @@
 <head>
+	<script type="text/javascript">
+    	var host = "www.bloghicn.ga";
+    	if ((host == window.location.host) && (window.location.protocol != "https:")){
+        	window.location.protocol = "https";
+    	}
+ 	</script>
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
 	<meta name="description" content="{{ page.description }}">

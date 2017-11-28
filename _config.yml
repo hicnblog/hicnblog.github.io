@@ -1,7 +1,7 @@
 title: BLOGHICN
 description: > # this means to ignore newlines until "baseurl:"
   Blog yang berisikan catatan dari seorang kuli. 
-permalink: ':title/'
+permalink: 'posts/:title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.bloghicn.ga" # the base hostname & protocol for your site, e.g. http://example.com
 enforce_ssl: www.bloghicn.ga
