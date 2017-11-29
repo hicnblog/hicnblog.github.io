@@ -1,0 +1,44 @@
+/*
+This style for use light mode on website
+*/
+body {
+	color: #000000;
+    background-color: #ffffff;
+}
+.sidebar {
+	background-color: #f7f7f7;
+}
+.contact .contact-title {
+	color: #000000;
+}
+.contact ul li a {
+    color: #565656;
+}
+.post, .article-page {
+    background-color: #ffffff;
+}
+.post:hover {
+    -webkit-transform: translate(0px, -2px);
+    -ms-transform: translate(0px, -2px);
+    transform: translate(0px, -2px);
+    -webkit-box-shadow: 0px 4px 3px 0px rgba(21, 22, 23, 0.55);
+    -moz-box-shadow: 0px 4px 3px 0px rgba(21, 22, 23, 0.55);
+    box-shadow: 0px 4px 3px 0px rgba(21, 22, 23, 0.55);
+}
+.wrap-content {
+    border: 1px solid #f1f1f1;
+}
+.post .post-content {
+    border: 1px solid #f1f1f1;
+    border-bottom: none;
+    border-right: none;
+}
+.post .post-thumbnail {
+    border-top: 1px solid #f1f1f1;
+}
+section.comment-area {
+    background-color: #4e4e4e;
+}
+.comment-wrapper {
+    padding: 10px;
+}

@@ -1388,3 +1388,15 @@ div.page-not-found {
 div#disqus_thread a.publisher-anchor-color {
   color: #288ce4;
 }
+
+/* Merubah tampilan warna website */
+.switch-display-website {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+.post, .article-page {
+  max-width: 90%;
+}
