@@ -6,8 +6,6 @@ img: how-to-start.jpg
 tags: [web]
 ---
 
-![Cheat sheets markdown emoji]({{site.baseurl}}/assets/img/how-to-start.jpg)
-
 Markdown Emoji yang hanya tinggal di copy paste.
 {: #table_markdown_show}
 

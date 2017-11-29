@@ -6,8 +6,6 @@ img: we-in-rest.jpg
 tags: [web]
 ---
 
-![Peluncuran blog baru bro]({{site.baseurl}}/assets/img/we-in-rest.jpg)
-
 #### Fitur saat ini:
   - Ada dua tema (Hitam dan Putih).
   - Fitur Sharing.

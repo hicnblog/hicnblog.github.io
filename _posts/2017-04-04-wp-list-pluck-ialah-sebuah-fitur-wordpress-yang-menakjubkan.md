@@ -6,8 +6,6 @@ img: how-to-start.jpg
 tags: [web, wordpress]
 ---
 
-![wp_list_pluck() ialah sebuah fitur wordpress yang menakjubkan]({{site.baseurl}}/assets/img/how-to-start.jpg)
-
 **wp_list_pluck()** ialah fitur wordpress yang digunakan untuk mengambil _field_ atau bagian tertentu dari _Object_ yang kemudian dirubah menjadi bentuk list/daftar.
 Kalau belum paham juga saya akan menjalaskan dengan menggunakan kode.
 

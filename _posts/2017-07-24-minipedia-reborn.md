@@ -6,8 +6,6 @@ img: mp@2x.PNG
 tags: [web]
 ---
 
-![Minipedia Reborn]({{site.baseurl}}/assets/img/mp@2x.PNG)
-
 ## [Minipedia Reborn](http://www.bloghicn.ga/minipedia-reborn/){:target="_blank"}
 
 Menampilkan konten wikipedia secara simple. :blush:

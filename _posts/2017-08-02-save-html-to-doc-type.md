@@ -6,8 +6,6 @@ img: std@2x.PNG
 tags: [web]
 ---
 
-![Minipedia Reborn]({{site.baseurl}}/assets/img/std@2x.PNG)
-
 ## [saveasdoc](http://www.bloghicn.ga/saveasdoc/){:target="_blank"}
 
 Merupakan website yang kami buat untuk teman-teman yang ingin menyimpan konten dari editor online, yang kemudian disimpan dalam bentuk Doc file type.

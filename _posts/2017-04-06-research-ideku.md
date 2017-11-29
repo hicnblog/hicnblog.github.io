@@ -6,8 +6,6 @@ img: how-to-start.jpg
 tags: [web]
 ---
 
-![Ini Ceritaku]({{site.baseurl}}/assets/img/how-to-start.jpg)
-
 ## [iniceritaku](https://www.iniceritaku.ga/){:target="_blank"}
 
 Website yang mempunyai slogan **Tulis, Publish dan Share cerita kamu** ini merupakan website simple yang dibuat untuk mempublikasikan cerita yang teman-teman buat.

@@ -6,8 +6,6 @@ img: markdown@2x.png
 tags: [web]
 ---
 
-![Mengenal Markdown]({{site.baseurl}}/assets/img/markdown@2x.png)
-
 ## Apa itu **Markdown**
 
 **Markdown** ialah cara untuk memberikan styling pada teks di web. Styling yang dimaksud ialah merubah tampilan dokumen yaitu :
