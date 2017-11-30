@@ -1,35 +1,36 @@
+---
 title: BLOGHICN
-description: > # this means to ignore newlines until "baseurl:"
-  Blog yang berisikan catatan dari seorang kuli. 
-permalink: 'posts/:title/'
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.bloghicn.ga" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: "Blog yang berisikan catatan dari seorang kuli. \n"
+permalink: posts/:title/
+baseurl: ''
+url: https://www.bloghicn.ga
 enforce_ssl: www.bloghicn.ga
-
-# Author Settings
-author: Habib Imron Cahyo Nugroho # add your name
-author-img: habib-imron-cahyo-nugroho.jpg # add your photo
-about-author: Hanya seorang kuli. # add description
+author: Habib Imron Cahyo Nugroho
+author-img: habib-imron-cahyo-nugroho.jpg
+about-author: Hanya seorang kuli.
 twitter: Hab_15
 facebook: habibimroncn
 github: habibimroncn
 linkedin: habib-nugroho
 email: habibimron1508@gmail.com
-
-# Disqus
-discus-identifier: bloghicn # add your discus identifier
-
-# Tracker
-analytics: UA-84821720-4 # Google Analytics
-
-# Build Settings
+discus-identifier: bloghicn
+analytics: UA-84821720-4
 markdown: kramdown
 plugins:
-  - jekyll-sitemap
-  - jemoji
-  - jekyll-admin
-
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
-
-# Visual-CV Settings
+- jekyll-sitemap
+- jemoji
+- jekyll-admin
+exclude:
+- node_modules
+- gulpfile.js
+- package.json
+- yarn.lock
 visual-cv-url: https://www.visualcv.com/habibimroncn

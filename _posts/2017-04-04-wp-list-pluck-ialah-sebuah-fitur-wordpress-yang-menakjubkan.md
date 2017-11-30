@@ -1,9 +1,12 @@
 ---
+title: wp_list_pluck() ialah sebuah fitur wordpress yang menakjubkan
+date: 2017-04-04 00:00:00 Z
+tags:
+- web
+- wordpress
 layout: post
-title: "wp_list_pluck() ialah sebuah fitur wordpress yang menakjubkan"
-description: "wp_list_pluck(), fitur wordpress yang membuat kode semakin simple."
+description: wp_list_pluck(), fitur wordpress yang membuat kode semakin simple.
 img: how-to-start.jpg
-tags: [web, wordpress]
 ---
 
 **wp_list_pluck()** ialah fitur wordpress yang digunakan untuk mengambil _field_ atau bagian tertentu dari _Object_ yang kemudian dirubah menjadi bentuk list/daftar.

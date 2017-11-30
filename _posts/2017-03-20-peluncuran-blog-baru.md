@@ -1,9 +1,12 @@
 ---
+title: Peluncuran blog baru bro
+date: 2017-03-20 00:00:00 Z
+tags:
+- web
 layout: post
-title: "Peluncuran blog baru bro"
-description: "bloghicn ialah blog yang dibuat dengan sangat simple alias tanpa biaya sepeserpun. Hehehe."
+description: bloghicn ialah blog yang dibuat dengan sangat simple alias tanpa biaya
+  sepeserpun. Hehehe.
 img: we-in-rest.jpg
-tags: [web]
 ---
 
 #### Fitur saat ini:

@@ -1,9 +1,13 @@
 ---
-layout: post
 title: Kucing
+date: 2017-09-19 00:00:00 Z
+tags:
+- Kucing
+- Hewan
+- Iseng
+layout: post
 description: Kucing ku telu kabeh lemu - lemu.
 img: cat-1508613.jpg
-tags: [Kucing, Hewan, Iseng]
 ---
 
 ### Show belly

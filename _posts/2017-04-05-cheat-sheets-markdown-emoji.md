@@ -1,9 +1,12 @@
 ---
+title: Cheat sheets markdown emoji
+date: 2017-04-05 00:00:00 Z
+tags:
+- web
 layout: post
-title: "Cheat sheets markdown emoji"
-description: "Kumpulan markdown emoji yang mudah untuk digunakan, tinggal copy paste :blush:"
+description: 'Kumpulan markdown emoji yang mudah untuk digunakan, tinggal copy paste
+  :blush:'
 img: how-to-start.jpg
-tags: [web]
 ---
 
 Markdown Emoji yang hanya tinggal di copy paste.

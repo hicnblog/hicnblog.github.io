@@ -1,9 +1,12 @@
 ---
+title: Mengenal Markdown
+date: 2017-03-23 00:00:00 Z
+tags:
+- web
 layout: post
-title: "Mengenal Markdown"
-description: "Markdown ialah sintaks ringan dan mudah digunakan untuk styling pada semua bentuk tulisan."
+description: Markdown ialah sintaks ringan dan mudah digunakan untuk styling pada
+  semua bentuk tulisan.
 img: markdown@2x.png
-tags: [web]
 ---
 
 ## Apa itu **Markdown**

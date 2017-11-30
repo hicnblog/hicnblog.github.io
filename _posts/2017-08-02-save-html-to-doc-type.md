@@ -1,9 +1,12 @@
 ---
+title: Save HTML to Doc Type
+date: 2017-08-02 00:00:00 Z
+tags:
+- web
 layout: post
-title: "Save HTML to Doc Type"
-description: "Save HTML to Doc Type ialah website editor yang bisa disimpan dalam bentuk Doc type."
+description: Save HTML to Doc Type ialah website editor yang bisa disimpan dalam bentuk
+  Doc type.
 img: std@2x.PNG
-tags: [web]
 ---
 
 ## [saveasdoc](http://www.bloghicn.ga/saveasdoc/){:target="_blank"}

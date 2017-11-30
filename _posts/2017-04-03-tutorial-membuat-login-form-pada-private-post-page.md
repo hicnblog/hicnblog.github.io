@@ -1,9 +1,13 @@
 ---
+title: Tutorial membuat login form pada private page atau post wordpress
+date: 2017-04-03 00:00:00 Z
+tags:
+- web
+- wordpress
 layout: post
-title: "Tutorial membuat login form pada private page atau post wordpress"
-description: "Secara default page atau post private tidak akan ditampilkan jika pengguna tidak login."
+description: Secara default page atau post private tidak akan ditampilkan jika pengguna
+  tidak login.
 img: how-to-start.jpg
-tags: [web, wordpress]
 ---
 
 Wordpress secara default akan menampilkan page 404 jika url yang diakses tidak ditemukan. Seperti halnya page atau post dengan status **private**, 

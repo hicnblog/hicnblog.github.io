@@ -1,9 +1,12 @@
 ---
+title: Permainan kecepatan ketik (tesketik)
+date: 2017-07-23 00:00:00 Z
+tags:
+- web
 layout: post
-title: "Permainan kecepatan ketik (tesketik)"
-description: "tesketik ialah website yang digunakan untuk mengetes kecepatan ketik anda dalam waktu 1 menit."
+description: tesketik ialah website yang digunakan untuk mengetes kecepatan ketik
+  anda dalam waktu 1 menit.
 img: tesketik@2x.png
-tags: [web]
 ---
 
 ## [tesketik](http://www.bloghicn.ga/tesketik/){:target="_blank"}

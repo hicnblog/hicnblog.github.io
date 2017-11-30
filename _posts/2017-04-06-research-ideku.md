@@ -1,9 +1,11 @@
 ---
+title: Ini Ceritaku
+date: 2017-04-06 00:00:00 Z
+tags:
+- web
 layout: post
-title: "Ini Ceritaku"
-description: "sebuah website yang digunakan untuk share cerita kamu :smile:"
+description: 'sebuah website yang digunakan untuk share cerita kamu :smile:'
 img: how-to-start.jpg
-tags: [web]
 ---
 
 ## [iniceritaku](https://www.iniceritaku.ga/){:target="_blank"}
