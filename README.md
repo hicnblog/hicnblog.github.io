@@ -2,4 +2,4 @@
 
 **BLOGHICN**
 
-:link: [BLOGHICN](https://github.com/rxaviers)
+:link: [BLOGHICN](https://www.bloghicn.ga/)
