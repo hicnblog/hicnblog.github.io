@@ -1,6 +1,6 @@
 ---
 title: BLOGHICN
-timezone: UTC
+timezone: Asia/Jakarta
 collections:
   posts:
     title: Posts
@@ -10,7 +10,7 @@ collections:
     output: true
 description: "Blog yang berisikan catatan dari seorang kuli. \n"
 permalink: posts/:title/
-baseurl: ''
+baseurl: 
 url: https://www.bloghicn.ga
 enforce_ssl: www.bloghicn.ga
 author: Habib Imron Cahyo Nugroho
