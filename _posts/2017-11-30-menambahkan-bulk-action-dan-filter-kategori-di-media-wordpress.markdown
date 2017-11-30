@@ -5,9 +5,9 @@ tags:
 - web
 - wordpress
 img: how-to-start.jpg
-layout: post
 description: Secara default filter category dan bulk action di media WordPress tidak
   ada. Jadi Kode ni dibuat untuk menambahkan fitur tersebut kedalam Media WordPress.
+layout: post
 ---
 
 Tidak perlu menulis panjang lebar :smile:. Berikut kode yang saya buat:
@@ -138,4 +138,4 @@ function add_media_cat_dropdown() {
 ?>
 {% endhighlight %}
 
-{% giphy thank you %}
+{% giphy thank-you %}
