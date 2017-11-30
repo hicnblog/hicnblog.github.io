@@ -10,7 +10,7 @@ layout: post
 
 Tidak perlu menulis panjang lebar :smile:. Berikut kode yang saya buat:
 
-**Kode untuk Bulk Action
+**Kode untuk Bulk Action**
 
 {% highlight php %}
 <?php
@@ -82,7 +82,7 @@ function custom_bulk_action_handler($redirect_to, $action_name, $post_ids){
 ?>
 {% endhighlight %}
 
-**Kode untuk Filter
+**Kode untuk Filter**
 
 {% highlight php %}
 <?php
