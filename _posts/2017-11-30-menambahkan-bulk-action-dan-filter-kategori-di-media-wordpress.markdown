@@ -4,8 +4,7 @@ date: 2017-11-30 09:41:00 +07:00
 tags:
 - web
 - wordpress
-img:
-- how-to-start.jpg
+img: how-to-start.jpg
 layout: post
 ---
 
