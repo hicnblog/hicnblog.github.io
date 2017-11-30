@@ -27,6 +27,8 @@ markdown: kramdown
 plugins:
 - jekyll-sitemap
 - jemoji
+- jekyll-giphy
+- jekyll_oembed
 exclude:
 - node_modules
 - gulpfile.js
