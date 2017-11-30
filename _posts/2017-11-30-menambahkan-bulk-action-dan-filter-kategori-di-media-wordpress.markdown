@@ -4,14 +4,17 @@ date: 2017-11-30 09:41:00 +07:00
 tags:
 - web
 - wordpress
+Field name:
+  img: how-to-start.jpg
 layout: post
 ---
 
-Tidak perlu menulis panjang lebar :smile:. Berikut kode yang saya buat :
+Tidak perlu menulis panjang lebar :smile:. Berikut kode yang saya buat:
 
-#### Kode untuk Bulk Action
+**Kode untuk Bulk Action
 
-```php
+{% highlight php %}
+<?php
 function categories_obj(){
     $args = array(
         'type'                     => 'attachment',
@@ -77,12 +80,13 @@ function custom_bulk_action_handler($redirect_to, $action_name, $post_ids){
     }
     return $redirect_to;
 }
-```
+?>
+{% endhighlight %}
 
+**Kode untuk Filter
 
-#### Kode untuk Filter
-
-```php
+{% highlight php %}
+<?php
 add_action('pre_get_posts', 'filter_media_by_cat');
 add_action( 'restrict_manage_posts', 'add_media_cat_dropdown' );
 
@@ -130,4 +134,5 @@ function add_media_cat_dropdown() {
         wp_dropdown_categories( $args );
     endif;
 }
-```
+?>
+{% endhighlight %}
