@@ -1400,3 +1400,11 @@ div#disqus_thread a.publisher-anchor-color {
 .post, .article-page {
   max-width: 90%;
 }
+/*giphy*/
+div.on-content-img-giphy {
+  margin: 0 auto;
+  text-align: center;
+  text-align: -webkit-center;
+  display: block;
+  margin-top: 10px;
+}
