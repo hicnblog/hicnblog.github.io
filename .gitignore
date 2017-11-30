@@ -4,6 +4,7 @@ _site
 package.json
 yarn.lock
 node_modules/
+Gemfile.lock
 
 ### macOS ###
 *.DS_Store
