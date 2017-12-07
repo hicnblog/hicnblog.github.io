@@ -137,5 +137,3 @@ function add_media_cat_dropdown() {
 }
 ?>
 {% endhighlight %}
-
-{% giphy thank-you %}
